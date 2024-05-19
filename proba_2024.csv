@@ -1,4 +1,4 @@
-codegeo,Libelle_departement,predicted_party,La France insoumise,Les Republicains,Rassemblement National,Renaissance,Union populaire republicaine
+codegeo,Libelle_departement,predicted_party,La France insoumise,Les Rï¿½publicains,Rassemblement National,Renaissance,Union populaire rï¿½publicaine
 1,ain,Renaissance,0.0,0.05,0.25,0.7,0.0
 2,aisne,Rassemblement National,0.02,0.0,0.97,0.01,0.0
 2A,corse-du-sud,Rassemblement National,0.08,0.0,0.86,0.06,0.0
@@ -73,7 +73,7 @@ codegeo,Libelle_departement,predicted_party,La France insoumise,Les Republicains
 71,saone-et-loire,Renaissance,0.0,0.0,0.19,0.81,0.0
 72,sarthe,Renaissance,0.0,0.22,0.08,0.7,0.0
 73,savoie,Renaissance,0.0,0.0,0.01,0.99,0.0
-74,haute-savoie,Les Republicains,0.0,0.61,0.06,0.33,0.0
+74,haute-savoie,Les Rï¿½publicains,0.0,0.61,0.06,0.33,0.0
 75,paris,Renaissance,0.07,0.0,0.01,0.92,0.0
 76,seine-maritime,Renaissance,0.08,0.0,0.16,0.76,0.0
 77,seine-et-marne,La France insoumise,0.68,0.0,0.01,0.31,0.0
