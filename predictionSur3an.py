@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 # 1. Lecture des données à partir d'un fichier CSV
-df = pd.read_csv('resultat_jointure.csv')
+df = pd.read_csv('Data/resultat_jointure.csv')
 
 # 2. Préparation des données
 # Encodage des variables catégorielles
@@ -65,8 +65,8 @@ def make_predictions_for_year(year, adjustment_factor):
     predicted_parties = label_encoder.inverse_transform(predicted_party_indices)
 
     # Préparer un DataFrame avec les résultats
-    results = df[['codegeo', 'Libelle_departement']].copy()
-    results['predicted_party'] = predicted_parties
+    results = df[['Libelle_departement']].copy()
+    results[f'predicted_party{year}'] = predicted_parties
 
     # Créer un DataFrame pour les probabilités avec les noms des partis comme colonnes
     classes = label_encoder.classes_
@@ -76,7 +76,7 @@ def make_predictions_for_year(year, adjustment_factor):
     results = pd.concat([results, proba_df], axis=1)
 
     # Enregistrement des résultats dans un fichier CSV
-    results.to_csv(f'proba_{year}.csv', index=False)
+    results.to_csv(f'Data/proba_{year}.csv', index=False)
 
     print(f"Les résultats des prédictions pour {year} ont été enregistrés dans 'proba_{year}.csv'.")
 
@@ -85,3 +85,4 @@ def make_predictions_for_year(year, adjustment_factor):
 make_predictions_for_year(2024, adjustment_factor=0.00)  # Aucun ajustement pour 2024
 make_predictions_for_year(2025, adjustment_factor=0.01)  # Ajustement de 1% pour simuler les changements en 2025
 make_predictions_for_year(2026, adjustment_factor=0.02)  # Ajustement de 2% pour simuler les changements en 2026
+make_predictions_for_year(2027, adjustment_factor=0.03)  # Ajustement de 2% pour simuler les changements en 2027

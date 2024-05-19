@@ -12,7 +12,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Lecture des données à partir d'un fichier CSV
-df = pd.read_csv('resultat_jointure.csv')
+df = pd.read_csv('Data/resultat_jointure.csv')
 
 # Préparation des données
 label_encoder = LabelEncoder()

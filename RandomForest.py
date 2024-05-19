@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 # 1. Charger le DataFrame depuis le fichier CSV
-df = pd.read_csv("resultat_jointure.csv")
+df = pd.read_csv("Data/resultat_jointure.csv")
 
 # 2. Sélectionner les fonctionnalités pertinentes
 features = df[['2017', '2018', '2019', '2020', '2021', '2022', 'Hommes_0-19', 'Hommes_20-39', 'Hommes_40-59', 'Hommes_60-74', 'Hommes_75plus', 'Femmes_0-19', 'Femmes_20-39', 'Femmes_40-59', 'Femmes_60-74', 'Femmes_75plus']]
