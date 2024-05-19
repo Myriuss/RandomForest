@@ -17,7 +17,13 @@ features = df[['2017', '2018', '2019', '2020', '2021', '2022',
                'Hommes_0-19', 'Hommes_20-39', 'Hommes_40-59',
                'Hommes_60-74', 'Hommes_75plus', 'Femmes_0-19',
                'Femmes_20-39', 'Femmes_40-59', 'Femmes_60-74',
-               'Femmes_75plus', 'Population_Total']]
+               'Femmes_75plus', 'Population_Total',
+               'emploi_2007', 'emploi_2008', 'emploi_2009',
+               'emploi_2010', 'emploi_2011', 'emploi_2012',
+               'emploi_2013', 'emploi_2014', 'emploi_2015',
+               'emploi_2016', 'emploi_2017', 'emploi_2018',
+               'emploi_2019', 'emploi_2020', 'emploi_2021',
+               'emploi_2022']]
 
 # Combiner les données de 2017 et 2022 pour créer une seule cible
 df_2017 = features.copy()
